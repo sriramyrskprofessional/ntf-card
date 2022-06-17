@@ -1,0 +1,174 @@
+
+@mixin media-minwidth($width) {
+    @media (min-width:$width) {
+        @content;
+    }
+    
+}
+
+@import "scss/_variables.scss";
+*{
+    box-sizing: border-box;
+
+}
+
+.attribution { font-size: 11px; text-align: center; 
+    a { color: hsl(228, 45%, 44%); }
+}
+a{
+    text-decoration: none;
+    color: $white-col;
+}
+p{
+    font-size: 18px;
+}
+body{
+    background-color: $main-bg;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.flx-cont{
+    display: flex;
+    &.center{
+        justify-content: center;
+        align-items: center;
+    }
+    &.center-a{
+        align-items: center;
+    }
+    &.dir-col{
+        flex-direction: column;
+    }
+    &.spc-btw__j{
+        justify-content: space-between;
+    }
+    &.spc-evn__j{
+        justify-content: space-evenly;
+    }
+}
+.card-holder__cont{
+    min-height: 100vh;
+}
+.card-holder{
+    width: 20.37rem;
+    height: 33.75rem ;
+    background-color: $card-bg;
+    border-radius: 8px;
+    @include media-minwidth(63rem){
+        width: 21.85rem;
+        height: 37.5rem;
+        border-radius: 16px;
+        justify-content: space-evenly !important;
+    }
+
+}
+.eqb-img__cont{
+    width: $infom-width;
+    height: $infom-width;
+    @include media-minwidth(63rem){
+        width: $infom-width+1.5rem;
+        height: $infom-width+1.5rem;
+        background-image:url("images/image-equilibrium.jpg") ;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover,
+        &:active{
+        background:linear-gradient($cyan-trans),url("images/image-equilibrium.jpg") ;
+        background-size: cover;
+        cursor: pointer;
+        svg{
+            z-index: 1;
+            
+        }
+    }
+        
+    }
+    
+    
+    img{
+        width: 100%;
+        border-radius: 8px;
+        @include media-minwidth(63rem){
+            display: none;
+        }
+    }
+    svg{
+        display: none;
+    }
+    // img:hover,
+    // img:active{
+
+    // }
+}
+.card-descrip{
+    width: $infom-width;
+    p{
+        a{
+            color: $white-col;
+            font-weight: 600;
+            font-size: 1.5rem;
+            &:hover,
+            &:active{
+                color: $cyan;
+            }
+        }
+    }
+}
+.card-descrip__slogan{
+    color: $soft-blue;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.div-daysleft{
+    justify-content: space-between;
+    align-items: center;
+}
+.ETH{
+    color: $cyan;
+    font-size: 1rem;
+    margin-left: 0.2rem;
+}
+.dayleft{
+    color: $soft-blue;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 0.3rem;
+}
+.line{
+    background-color: $line-col;
+    width: $infom-width;
+    height: 0.1rem;
+}
+.icon-info{
+    
+    p{
+        color: $soft-blue;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    .name{
+        color:$white-col;
+        font-size: 1rem;
+        margin-left: 0.3rem;
+        &:hover,
+        &:active{
+            color: $cyan;
+            cursor: pointer;
+        }
+    }
+    .flx-cont{
+        margin-left: 1rem;
+    }
+}
+.icon-avatar{
+    width: 1.87rem;
+    height: 1.87rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

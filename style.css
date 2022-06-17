@@ -1,0 +1,219 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  background-color: #0d192b;
+  font-weight: bold;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.flx-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flx-cont.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flx-cont.center-a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flx-cont.dir-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flx-cont.spc-btw__j {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flx-cont.spc-evn__j {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-holder__cont {
+  min-height: 100vh;
+}
+
+.card-holder {
+  width: 20.37rem;
+  height: 33.75rem;
+  background-color: #14253d;
+  border-radius: 8px;
+}
+
+@media (min-width: 63rem) {
+  .card-holder {
+    width: 21.85rem;
+    height: 37.5rem;
+    border-radius: 16px;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+}
+
+.eqb-img__cont {
+  width: 17.5rem;
+  height: 17.5rem;
+}
+
+@media (min-width: 63rem) {
+  .eqb-img__cont {
+    width: 19rem;
+    height: 19rem;
+    background-image: url("images/image-equilibrium.jpg");
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .eqb-img__cont:hover, .eqb-img__cont:active {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 247, 0.52))), url("images/image-equilibrium.jpg");
+    background: linear-gradient(rgba(0, 255, 247, 0.52)), url("images/image-equilibrium.jpg");
+    background-size: cover;
+    cursor: pointer;
+  }
+  .eqb-img__cont:hover svg, .eqb-img__cont:active svg {
+    z-index: 1;
+  }
+}
+
+.eqb-img__cont img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (min-width: 63rem) {
+  .eqb-img__cont img {
+    display: none;
+  }
+}
+
+.eqb-img__cont svg {
+  display: none;
+}
+
+.card-descrip {
+  width: 17.5rem;
+}
+
+.card-descrip p a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card-descrip p a:hover, .card-descrip p a:active {
+  color: #00fff7;
+}
+
+.card-descrip__slogan {
+  color: #8bacda;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.div-daysleft {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ETH {
+  color: #00fff7;
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.dayleft {
+  color: #8bacda;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-left: 0.3rem;
+}
+
+.line {
+  background-color: #2f415b;
+  width: 17.5rem;
+  height: 0.1rem;
+}
+
+.icon-info p {
+  color: #8bacda;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.icon-info .name {
+  color: white;
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+.icon-info .name:hover, .icon-info .name:active {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.icon-info .flx-cont {
+  margin-left: 1rem;
+}
+
+.icon-avatar {
+  width: 1.87rem;
+  height: 1.87rem;
+}
+
+.icon-avatar img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
